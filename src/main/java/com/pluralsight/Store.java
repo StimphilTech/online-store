@@ -4,10 +4,7 @@ package com.pluralsight;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- * Starter code for the Online Store workshop.
- * Students will complete the TODO sections to make the program work.
- */
+
 public class Store {
 
     public static void main(String[] args) {
@@ -99,7 +96,9 @@ public class Store {
     /**
      * Searches a list for a product by its id.
      *
-     * @return the matching Product, or null if not found
+     * @return the matching Product, or null if not foundSearches a list for a product by its id.
+     *      *
+     *      * @return the matching Product, or null if not found
      */
     public static Product findProductById(String id, ArrayList<Product> inventory) {
         // TODO: loop over the list and compare ids
