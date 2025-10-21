@@ -55,7 +55,18 @@ public class Store {
     public static void loadInventory(String fileName, ArrayList<Product> inventory) {
         // TODO: read each line, split on "|",
         //       create a Product object, and add it to the inventory list
-    }
+
+
+
+        String [] filename = new String[11]; // counted from products.csv list of 12
+        for (int i = 0; i < filename.length; i++) {
+            System.out.println(filename[i] + " ");
+        }
+        System.out.println();
+
+
+
+        }
 
     /**
      * Displays all products and lets the user add one to the cart.
@@ -105,5 +116,7 @@ public class Store {
         return null;
     }
 }
+
+
 
 

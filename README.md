@@ -32,14 +32,14 @@ Follow these steps to get your application running within IntelliJ IDEA:
 
 ## Technologies Used
 
-- Java: Mention the version you are using.
+- Java: 17 Amazon Coretto
 - Any additional libraries or frameworks used in the project.
 
 ## Demo
 
 Include screenshots or GIFs that show your application in action. Use tools like [Giphy Capture](https://giphy.com/apps/giphycapture) to record a GIF of your application.
 
-![Application Screenshot](path/to/your/screenshot.png)
+Screenshot: 
 
 ## Future Work
 
