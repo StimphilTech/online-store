@@ -1,12 +1,13 @@
-# Project Title
+# Electronic Shop
 
 ## Description of the Project
 
-Briefly describe what this Java console application does. Mention its purpose and who the intended users are. Explain the main functionality and what problems it aims to solve.
+This Java console application is a CLI user interface for users to shop at the storefront. 
+The menu will have options for the user to be shown products,
+shown inventory in the cart and to exit the application completely. 
 
 ## User Stories
 - As a developer, I will read each line, so that I can split on "|"
-- As a developer, I will show each product (id, name, price) and prompt for an id, so that I can find that product and add to cart
 - As a developer, I will show each product (id, name, price), and prompt for an id, so that I can find that product and add to cart
 - As a developer, I will make a menu so that each product can be listed(L) or Total Cost or checkout(C) or return (X)
 - As a developer I want to Handles the checkout process so that I can confirm the user wants to buy
@@ -16,8 +17,9 @@ Briefly describe what this Java console application does. Mention its purpose an
 
 ## Setup
 
-Instructions on how to set up and run the project using IntelliJ IDEA.
-
+First, press the play button. The comment will be written, "Welcome to the Online Store!"
+Then 3 options you can choose from the menu. You are given 3 keys and 1. for  Show Products, 2. for  Show Cart, and 3. for Exit. pressing 3 is simple the comment will say:
+"Thank you for shopping with us!". 2 and 3 keys should do exactly what they say. 
 ### Prerequisites
 
 - IntelliJ IDEA: Ensure you have IntelliJ IDEA installed, which you can download from [here](https://www.jetbrains.com/idea/download/).
