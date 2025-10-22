@@ -5,11 +5,14 @@
 Briefly describe what this Java console application does. Mention its purpose and who the intended users are. Explain the main functionality and what problems it aims to solve.
 
 ## User Stories
+- As a developer, I will read each line, so that I can split on "|"
+- As a developer, I will show each product (id, name, price) and prompt for an id, so that I can find that product and add to cart
+- As a developer, I will show each product (id, name, price), and prompt for an id, so that I can find that product and add to cart
+- As a developer, I will make a menu so that each product can be listed(L) or Total Cost or checkout(C) or return (X)
+- As a developer I want to Handles the checkout process so that I can confirm the user wants to buy
+- As a developer I will make a list for a product by its ID so that the customer can find matching product
+- As a developer I will make a loop over the list so that I can compare ids
 
-List the user stories that guided the development of your application. Format these stories as: "As a [type of user], I want [some goal] so that [some reason]."
-
-- As a user, I want to be able to input my data, so that the application can process it accordingly.
-- As a user, I want to receive immediate feedback, so I can understand what to do next.
 
 ## Setup
 
@@ -57,12 +60,11 @@ List resources such as tutorials, articles, or documentation that helped you dur
 
 ## Team Members
 
-- **Name 1** - Specific contributions or roles.
-- **Name 2** - Specific contributions or roles.
+-Monalisa Stimphil
 
 ## Thanks
 
 Express gratitude towards those who provided help, guidance, or resources:
 
-- Thank you to [Mentor's Name] for continuous support and guidance.
+- Thank you to Raymond for continuous support and guidance.
 - A special thanks to all teammates for their dedication and teamwork.
