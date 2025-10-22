@@ -1,6 +1,12 @@
 
 package com.pluralsight;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -56,13 +62,42 @@ public class Store {
         // TODO: read each line, split on "|",
         //       create a Product object, and add it to the inventory list
 
+        File file = new File (fileName);
+//        if (!file.exists()){
+//            file.createNewFile();
+//        }
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(fileName));
+            String input;
+
+            while((input = reader.readLine()) != null) {
+                String[] token = input.split("\\|");
+                String serialNum = token[0];
+                String name = token [1];
+                double price = Double.parseDouble(token [2]);
 
 
-        String [] filename = new String[11]; // counted from products.csv list of 12
-        for (int i = 0; i < filename.length; i++) {
-            System.out.println(filename[i] + " ");
+
+                inventory.add (new Product(serialNum,name,price));
+
+
+            }
+            reader.close();
+
+        } catch (IOException e) {
+            System.out.println("File cannot be read");
+            ;
+
         }
-        System.out.println();
+
+
+
+
+//       // String [] filename = new String[11]; // counted from products.csv list of 12
+//      //  for (int i = 0; i < filename.length; i++) {
+//            System.out.println(filename[i] + " ");
+//        }
+//        System.out.println();
 
 
 
