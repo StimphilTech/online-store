@@ -72,13 +72,13 @@ public class Store {
 
             while((input = reader.readLine()) != null) {
                 String[] token = input.split("\\|");
-                String serialNum = token[0];
+                String id = token[0];
                 String name = token [1];
                 double price = Double.parseDouble(token [2]);
 
 
 
-                inventory.add (new Product(serialNum,name,price));
+                inventory.add (new Product(id,name,price));
 
 
             }
@@ -93,11 +93,6 @@ public class Store {
 
 
 
-//       // String [] filename = new String[11]; // counted from products.csv list of 12
-//      //  for (int i = 0; i < filename.length; i++) {
-//            System.out.println(filename[i] + " ");
-//        }
-//        System.out.println();
 
 
 
@@ -112,7 +107,37 @@ public class Store {
                                        Scanner scanner) {
         // TODO: show each product (id, name, price),
         //       prompt for an id, find that product, add to cart
+
+
+        Scanner myscanner = new Scanner(System.in);
+//        int choice =
+//        while (choice !=) {
+            System.out.println("Please provide id for the product" );
+            String id = myscanner.nextLine();
+        System.out.println("What is the product name ");
+        String name = myscanner.nextLine();
+
+
+
+//            if (!scanner.hasNextInt()) {
+//                System.out.println("");
+//                scanner.nextLine();                 // discard bad input
+//                continue;
+//            }
+//            choice = scanner.nextInt();
+//            scanner.nextLine();                     // clear newline
+
+//            switch (choice) {
+//                case 1 -> displayProducts(inventory, cart, scanner);
+//                case 2 -> displayCart(cart, scanner);
+//                case 3 -> System.out.println("Thank you for shopping with us!");
+//                default -> System.out.println("Invalid choice!");
+//            }
+
+        myscanner.close();
     }
+
+
 
     /**
      * Shows the contents of the cart, calculates the total,
