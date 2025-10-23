@@ -1,11 +1,16 @@
 package com.pluralsight;
 
 public class Product {
-    private String id;
+    public String id;
     private String name;
     private double price;
 
-    public Product(String serialNum, String name, double price) {
+    public Product (String id, String name, double price){
+
+
+    }
+
+    public Product(String id, String name, String price) {
         this.id = "";
         this.name = "";
         this.price = 0;
@@ -40,8 +45,28 @@ public class Product {
 
     public void setPrice(double price) {
         this.price = price;
+
+        if (price < 0) {
+            System.out.println("Price can't be less than zero");
+        }
+
+        else {
+            this.price = price;
+        }
     }
+
+
+    public double setPrice() {
+        return 0;
+
+    }
+
+
+
+
 }
+
+
 
 
 

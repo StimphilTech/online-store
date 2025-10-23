@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 
@@ -108,15 +109,28 @@ public class Store {
         // TODO: show each product (id, name, price),
         //       prompt for an id, find that product, add to cart
 
+        Scanner myscanner = null;
+        try {
 
-        Scanner myscanner = new Scanner(System.in);
+
+            myscanner = new Scanner(System.in);
 //        int choice =
 //        while (choice !=) {
-            System.out.println("Please provide id for the product" );
-            String id = myscanner.nextLine();
-        System.out.println("What is the product name ");
-        String name = myscanner.nextLine();
+            Product nintendo = new Product("GM1245", "Nintendo Switch Lite", 199.99);
+            nintendo.setId("GM1245");
+            nintendo.setName("Nintendo Switch Lite");
+            nintendo.setPrice(199.99);
 
+            System.out.println("Please provide id for the product");
+            String id = myscanner.nextLine();
+            System.out.println(("Please provide the name of the product"));
+            String name = myscanner.nextLine();
+            System.out.println("Please enter the price");
+            String price = myscanner.nextLine();
+            System.out.println(nintendo.getId() + "|" + nintendo.getName() + "|" + nintendo.getPrice());
+
+            inventory.add(new Product(nintendo.getId(), nintendo.getName(), nintendo.getPrice()));
+            {
 
 
 //            if (!scanner.hasNextInt()) {
@@ -132,10 +146,23 @@ public class Store {
 //                case 2 -> displayCart(cart, scanner);
 //                case 3 -> System.out.println("Thank you for shopping with us!");
 //                default -> System.out.println("Invalid choice!");
-//            }
+//
+//
 
-        myscanner.close();
+
+            }
+
+
+        } catch (NoSuchElementException e) {
+            System.out.println("Please add the price of the item listed");
+        } finally {
+            myscanner.close();
+        }
+
+
     }
+
+
 
 
 
